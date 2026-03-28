@@ -14,7 +14,8 @@ DSNet	RGB	65.4%	38.2%	28	15.2M
 
 **Architectural Flow**:
 
-<img width="330" height="176" alt="image" src="https://github.com/user-attachments/assets/07a19ad5-16b6-49d0-9ad8-c49c56aa0bd1" />
+<img width="306" height="281" alt="image" src="https://github.com/user-attachments/assets/157d4f1b-a1a6-4d88-ae40-c60743ecb077" />
+
 
 The proposed architecture processes RGB and thermal images to achieve robust object detection under challenging environmental conditions. Both modalities are first passed through separate YOLOv8 backbone networks to extract deep visual and thermal features. These features are then organized using multi-scale feature pyramid extraction, enabling the model to detect objects of varying sizes. A modality configuration controller allows the system to operate in RGB-only, thermal-only, or multimodal modes. The core component, domain-adaptive attention fusion, integrates features using bidirectional cross-attention and spatially adaptive modality weighting while suppressing weather-related noise. Finally, fused multi-scale representations (P3, P4, P5) generate a weather-robust multimodal feature representation for accurate and reliable object detection<img width="468" height="92" alt="image" src="https://github.com/user-attachments/assets/f0c8b719-1d44-4680-98bf-d6de7cd3eff3" />
 
